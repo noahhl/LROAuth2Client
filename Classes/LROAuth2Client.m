@@ -79,6 +79,7 @@
     
     NSDictionary *params = [NSMutableDictionary dictionary];
     [params setValue:@"authorization_code" forKey:@"grant_type"];
+    [params setValue:@"web_server" forKey:@"type"];
     [params setValue:clientID forKey:@"client_id"];
     [params setValue:clientSecret forKey:@"client_secret"];
     [params setValue:[redirectURL absoluteString] forKey:@"redirect_uri"];
@@ -107,6 +108,7 @@
   
   NSDictionary *params = [NSMutableDictionary dictionary];
   [params setValue:@"refresh_token" forKey:@"grant_type"];
+  [params setValue:@"web_server" forKey:@"type"];
   [params setValue:clientID forKey:@"client_id"];
   [params setValue:clientSecret forKey:@"client_secret"];
   [params setValue:[redirectURL absoluteString] forKey:@"redirect_uri"];
